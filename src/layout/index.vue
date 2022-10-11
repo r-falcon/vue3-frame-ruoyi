@@ -9,7 +9,7 @@
       class="drawer-bg"
       @click="handleClickOutside"
     />
-    <!-- <sidebar v-if="!sidebar.hide" class="sidebar-container" /> -->
+    <sidebar v-if="!sidebar.hide" class="sidebar-container" />
     <div
       :class="{ hasTagsView: needTagsView, sidebarHide: sidebar.hide }"
       class="main-container"

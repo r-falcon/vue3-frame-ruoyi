@@ -2,7 +2,7 @@
   .main-container {
     min-height: 100%;
     transition: margin-left 0.28s;
-    // margin-left: $base-sidebar-width;
+    margin-left: $base-sidebar-width;
     position: relative;
   }
 
@@ -117,9 +117,9 @@
       width: 54px !important;
     }
 
-    // .main-container {
-    //   margin-left: 54px;
-    // }
+    .main-container {
+      margin-left: 54px;
+    }
 
     .sub-menu-title-noDropdown {
       padding: 0 !important;

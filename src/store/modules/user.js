@@ -14,7 +14,6 @@ const useUserStore = defineStore("user", {
   actions: {
     // 登录
     login(userInfo) {
-      console.log("获取到的数据", userInfo);
       const username = userInfo.username.trim();
       const password = userInfo.password;
       // const code = userInfo.code;
@@ -22,11 +21,13 @@ const useUserStore = defineStore("user", {
       return new Promise((resolve, reject) => {
         login({ username: username, password: password })
           .then((res) => {
+            console.log(111, res);
             setToken(res.data.token);
             this.token = res.data.token;
             resolve();
           })
           .catch((error) => {
+            console.log(222, error);
             reject(error);
           });
       });

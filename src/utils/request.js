@@ -90,12 +90,13 @@ service.interceptors.request.use(
 // 响应拦截器
 service.interceptors.response.use(
   (res) => {
+    console.log(res);
     // 未设置状态码则默认成功状态
-    // const code = res.data.code || 200;
-    const code = res.meta.status || 200;
+    const code = res.data.code || 200;
+    // const code = res.meta.status || 200;
     // 获取错误信息
-    // const msg = errorCode[code] || res.data.msg || errorCode["default"];
-    const msg = errorCode[code] || res.meta.msg || errorCode["default"];
+    const msg = errorCode[code] || res.data.msg || errorCode["default"];
+    // const msg = errorCode[code] || res.meta.msg || errorCode["default"];
     // 二进制数据则直接返回
     if (
       res.request.responseType === "blob" ||
