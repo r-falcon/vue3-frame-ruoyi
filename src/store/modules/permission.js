@@ -56,47 +56,84 @@ const usePermissionStore = defineStore("permission", {
           },
           data: [
             // 系统管理
+            // {
+            //   name: "System",
+            //   path: "/system",
+            //   redirect: null,
+            //   component: "Layout",
+            //   meta: {
+            //     title: "系统管理",
+            //     icon: null,
+            //     roles: ["user"],
+            //   },
+            //   children: [
+            //     {
+            //       name: "User",
+            //       path: "user",
+            //       redirect: null,
+            //       component: "system/user/index",
+            //       hidden: false,
+            //       meta: {
+            //         title: "用户管理",
+            //         icon: null,
+            //       },
+            //     },
+            //     {
+            //       name: "Role",
+            //       path: "role",
+            //       redirect: null,
+            //       component: "system/role/index",
+            //       hidden: false,
+            //       meta: {
+            //         title: "角色管理",
+            //         icon: null,
+            //       },
+            //     },
+            //     {
+            //       name: "menu",
+            //       path: "Menu",
+            //       redirect: null,
+            //       component: "system/menu/index",
+            //       hidden: false,
+            //       meta: {
+            //         title: "菜单管理",
+            //         icon: null,
+            //       },
+            //     },
+            //   ],
+            // },
+
+            // 基础知识
             {
-              name: "System",
-              path: "/system",
+              name: "Basic",
+              path: "/basic",
               redirect: null,
               component: "Layout",
               meta: {
-                title: "系统管理",
+                title: "基础知识",
                 icon: null,
                 roles: ["user"],
               },
               children: [
                 {
-                  name: "User",
-                  path: "user",
+                  name: "Setup",
+                  path: "setup",
                   redirect: null,
-                  component: "system/user/index",
+                  component: "basic/setup/index",
                   hidden: false,
                   meta: {
-                    title: "用户管理",
+                    title: "setup函数",
                     icon: null,
                   },
                 },
                 {
-                  name: "Role",
-                  path: "role",
+                  name: "Variable",
+                  path: "variable",
                   redirect: null,
-                  component: "system/role/index",
+                  component: "basic/variable/index",
                   hidden: false,
                   meta: {
-                    title: "角色管理",
-                    icon: null,
-                  },
-                },
-                {
-                  name: "menu",
-                  path: "Menu",
-                  redirect: null,
-                  component: "system/menu/index",
-                  hidden: false,
-                  meta: {
-                    title: "菜单管理",
+                    title: "变量",
                     icon: null,
                   },
                 },
