@@ -11,7 +11,7 @@ import usePermissionStore from "@/store/modules/permission";
 
 NProgress.configure({ showSpinner: false });
 
-const whiteList = ["/login", "/auth-redirect", "/bind", "/register"];
+const whiteList = ["/login", "/auth-redirect", "/bind", "/register", "/screen"];
 
 router.beforeEach((to, from, next) => {
   NProgress.start();
@@ -28,7 +28,6 @@ router.beforeEach((to, from, next) => {
         useUserStore()
           .getInfo()
           .then(() => {
-            console.log(111);
             isRelogin.show = false;
             usePermissionStore()
               .generateRoutes()
