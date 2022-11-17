@@ -181,6 +181,17 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "Teleport",
+                  path: "teleport",
+                  redirect: null,
+                  component: "basic/teleport/index",
+                  hidden: false,
+                  meta: {
+                    title: "teleport",
+                    icon: null,
+                  },
+                },
               ],
             },
 
