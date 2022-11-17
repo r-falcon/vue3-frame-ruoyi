@@ -53,6 +53,11 @@ export const constantRoutes = [
     hidden: true,
   },
   {
+    path: "/remscreen",
+    component: () => import("@/views/options/remscreen"),
+    hidden: true,
+  },
+  {
     path: "/:pathMatch(.*)*",
     component: () => import("@/views/error/404"),
     hidden: true,
