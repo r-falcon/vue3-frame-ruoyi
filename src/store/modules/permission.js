@@ -122,7 +122,7 @@ const usePermissionStore = defineStore("permission", {
                   component: "basic/setup/index",
                   hidden: false,
                   meta: {
-                    title: "setup函数",
+                    title: "setup 函数",
                     icon: null,
                   },
                 },
@@ -145,6 +145,17 @@ const usePermissionStore = defineStore("permission", {
                   hidden: false,
                   meta: {
                     title: "生命周期",
+                    icon: null,
+                  },
+                },
+                {
+                  name: "Watch",
+                  path: "watch",
+                  redirect: null,
+                  component: "basic/watch/index",
+                  hidden: false,
+                  meta: {
+                    title: "watch 监听",
                     icon: null,
                   },
                 },
