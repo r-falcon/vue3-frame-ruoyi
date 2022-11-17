@@ -188,7 +188,18 @@ const usePermissionStore = defineStore("permission", {
                   component: "basic/teleport/index",
                   hidden: false,
                   meta: {
-                    title: "teleport",
+                    title: "teleport 弹框",
+                    icon: null,
+                  },
+                },
+                {
+                  name: "Suspense",
+                  path: "suspense",
+                  redirect: null,
+                  component: "basic/suspense/index",
+                  hidden: false,
+                  meta: {
+                    title: "suspense 异步加载处理",
                     icon: null,
                   },
                 },
