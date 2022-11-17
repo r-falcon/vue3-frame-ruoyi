@@ -144,7 +144,7 @@ const usePermissionStore = defineStore("permission", {
                   component: "basic/lifecircle/index",
                   hidden: false,
                   meta: {
-                    title: "生命周期",
+                    title: "钩子函数",
                     icon: null,
                   },
                 },
@@ -166,7 +166,18 @@ const usePermissionStore = defineStore("permission", {
                   component: "basic/computed/index",
                   hidden: false,
                   meta: {
-                    title: "computed",
+                    title: "computed 函数",
+                    icon: null,
+                  },
+                },
+                {
+                  name: "Fragment",
+                  path: "fragment",
+                  redirect: null,
+                  component: "basic/fragment/index",
+                  hidden: false,
+                  meta: {
+                    title: "fragment 片段",
                     icon: null,
                   },
                 },
