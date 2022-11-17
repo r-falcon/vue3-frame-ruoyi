@@ -137,6 +137,17 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "LifeCircle",
+                  path: "lifecircle",
+                  redirect: null,
+                  component: "basic/lifecircle/index",
+                  hidden: false,
+                  meta: {
+                    title: "生命周期",
+                    icon: null,
+                  },
+                },
               ],
             },
 
@@ -182,7 +193,6 @@ const usePermissionStore = defineStore("permission", {
 });
 
 // 遍历后台传来的路由字符串，转换为组件对象
-
 export function filterAsyncRouter(asyncRouterMap) {
   return asyncRouterMap.filter((route) => {
     if (route.component) {
