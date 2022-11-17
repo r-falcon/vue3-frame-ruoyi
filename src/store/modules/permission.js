@@ -159,6 +159,17 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "Computed",
+                  path: "computed",
+                  redirect: null,
+                  component: "basic/computed/index",
+                  hidden: false,
+                  meta: {
+                    title: "computed",
+                    icon: null,
+                  },
+                },
               ],
             },
 

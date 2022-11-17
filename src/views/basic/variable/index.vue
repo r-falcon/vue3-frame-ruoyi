@@ -102,7 +102,7 @@ const productObj = reactive({
   price: "￥209",
   title: "商品名称",
 });
-const { rest, price, title } = { ...toRefs(productObj) };
+const { rest, price, title } = toRefs(productObj);
 const addRest = () => productObj.rest++;
 
 /**
