@@ -79,6 +79,13 @@ app.component("svg-icon", SvgIcon);
 
 directive(app);
 
+// // 全局自定义指令
+// app.directive("focus", {
+//   mounted(el, bindings, vnode, preVnode) {
+//     el.focus();
+//   },
+// });
+
 // 使用element-plus 并且设置全局的大小
 app.use(ElementPlus, {
   locale: locale,

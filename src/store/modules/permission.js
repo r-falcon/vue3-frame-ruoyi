@@ -247,6 +247,17 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "Directive",
+                  path: "directive",
+                  redirect: null,
+                  component: "basic/directive/index",
+                  hidden: false,
+                  meta: {
+                    title: "自定义指令",
+                    icon: null,
+                  },
+                },
               ],
             },
 
