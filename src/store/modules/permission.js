@@ -203,6 +203,17 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "Pinia",
+                  path: "pinia",
+                  redirect: null,
+                  component: "basic/pinia/index",
+                  hidden: false,
+                  meta: {
+                    title: "pinia 状态管理",
+                    icon: null,
+                  },
+                },
               ],
             },
 
@@ -218,17 +229,17 @@ const usePermissionStore = defineStore("permission", {
                 roles: ["user"],
               },
               children: [
-                {
-                  name: "Test",
-                  path: "test",
-                  redirect: null,
-                  component: "options/test/index",
-                  hidden: false,
-                  meta: {
-                    title: "操作测试",
-                    icon: null,
-                  },
-                },
+                // {
+                //   name: "Test",
+                //   path: "test",
+                //   redirect: null,
+                //   component: "options/test/index",
+                //   hidden: false,
+                //   meta: {
+                //     title: "操作测试",
+                //     icon: null,
+                //   },
+                // },
               ],
             },
           ],
