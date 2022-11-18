@@ -214,6 +214,17 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "DefineHooks",
+                  path: "defineHooks",
+                  redirect: null,
+                  component: "basic/defineHooks/index",
+                  hidden: false,
+                  meta: {
+                    title: "可组合函数",
+                    icon: null,
+                  },
+                },
               ],
             },
 
