@@ -225,6 +225,17 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "AsyncComponent",
+                  path: "asyncComponent",
+                  redirect: null,
+                  component: "basic/asyncComponent/index",
+                  hidden: false,
+                  meta: {
+                    title: "懒加载组件",
+                    icon: null,
+                  },
+                },
               ],
             },
 
