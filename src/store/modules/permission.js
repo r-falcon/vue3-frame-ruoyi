@@ -258,6 +258,17 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "Vmodel",
+                  path: "vmodel",
+                  redirect: null,
+                  component: "basic/vmodel/index",
+                  hidden: false,
+                  meta: {
+                    title: "双向绑定原理",
+                    icon: null,
+                  },
+                },
               ],
             },
 
