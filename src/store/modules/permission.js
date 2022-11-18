@@ -280,6 +280,17 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "Vbind",
+                  path: "vbind",
+                  redirect: null,
+                  component: "basic/vbind/index",
+                  hidden: false,
+                  meta: {
+                    title: "v-bind数据绑定",
+                    icon: null,
+                  },
+                },
               ],
             },
 
