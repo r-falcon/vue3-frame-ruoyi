@@ -269,6 +269,17 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "Vifvfor",
+                  path: "vifvfor",
+                  redirect: null,
+                  component: "basic/vifvfor/index",
+                  hidden: false,
+                  meta: {
+                    title: "vifvfor使用优先级",
+                    icon: null,
+                  },
+                },
               ],
             },
 
