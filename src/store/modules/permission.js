@@ -236,6 +236,17 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "Slot",
+                  path: "slot",
+                  redirect: null,
+                  component: "basic/slot/index",
+                  hidden: false,
+                  meta: {
+                    title: "插槽",
+                    icon: null,
+                  },
+                },
               ],
             },
 
