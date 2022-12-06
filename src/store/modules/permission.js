@@ -302,6 +302,50 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "UseRouter",
+                  path: "userouter",
+                  redirect: null,
+                  component: "basic/userouter/index",
+                  hidden: false,
+                  meta: {
+                    title: "路由传参",
+                    icon: null,
+                  },
+                },
+                {
+                  name: "QueryDemo",
+                  path: "querydemo",
+                  redirect: null,
+                  component: "basic/userouter/querydemo",
+                  hidden: true,
+                  meta: {
+                    title: "query样例",
+                    icon: null,
+                  },
+                },
+                {
+                  name: "ParamsDemo",
+                  path: "paramsdemo",
+                  redirect: null,
+                  component: "basic/userouter/paramsdemo",
+                  hidden: true,
+                  meta: {
+                    title: "params样例",
+                    icon: null,
+                  },
+                },
+                {
+                  name: "DynamicDemo",
+                  path: "dynamicdemo/:id",
+                  redirect: null,
+                  component: "basic/userouter/dynamicdemo",
+                  hidden: true,
+                  meta: {
+                    title: "dynamic样例",
+                    icon: null,
+                  },
+                },
               ],
             },
 
