@@ -291,6 +291,17 @@ const usePermissionStore = defineStore("permission", {
                     icon: null,
                   },
                 },
+                {
+                  name: "Communication",
+                  path: "communication",
+                  redirect: null,
+                  component: "basic/communication/index",
+                  hidden: false,
+                  meta: {
+                    title: "组件通信",
+                    icon: null,
+                  },
+                },
               ],
             },
 
